@@ -22,4 +22,6 @@ function App() {
   );
 }
 
+// HERE IS ONE CONFLICT
+
 export default App;
