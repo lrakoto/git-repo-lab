@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div className="App container">
+      <div className="row justify-content-center">
+        <div
+          className="card p-2 m-2 justify-content-center align-middle"
+          style={{ width: "40rem" }}
         >
-          Learn React
-        </a>
-      </header>
+          <img
+            src="http://placekitten.com/200/300"
+            className="card-img-top"
+            alt="cat"
+          />
+          <div className="card-body">
+            <h5 className="card-title">Helena's Edit</h5>
+            <p className="card-text">Things and such etc!</p>
+          </div>
+
+          <div className="card-body">
+            <a href="https://www.google.com" className="card-link">
+              Site
+            </a>
+            <a href="http://github.com" className="card-link">
+              Github
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
